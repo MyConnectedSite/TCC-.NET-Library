@@ -1,0 +1,203 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5706FC4-E78B-48A0-BC05-6461446FC566}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCC2.API</RootNamespace>
+    <AssemblyName>TCC2.API.Compact</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>TCC2.API</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Deploy|AnyCPU' ">
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <OutputPath>bin\Deploy\</OutputPath>
+    <DefineConstants>TRACE;PocketPC</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json.Compact">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyLibraries\Newtonsoft\Newtonsoft.Json.Compact.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiParameter.cs" />
+    <Compile Include="API\ApiCallBase.cs" />
+    <Compile Include="API\ApiCallBaseGeneric.cs" />
+    <Compile Include="API\Filesystem\CheckIn.cs" />
+    <Compile Include="API\Filesystem\CheckOut.cs" />
+    <Compile Include="API\Filesystem\Copy.cs" />
+    <Compile Include="API\Filesystem\DeleteFilespace.cs" />
+    <Compile Include="API\Filesystem\Dir.cs" />
+    <Compile Include="API\Filesystem\FileOperationApiCall.cs" />
+    <Compile Include="API\Filesystem\Files.cs" />
+    <Compile Include="API\Filesystem\Filesystem.cs" />
+    <Compile Include="API\Filesystem\GetFile.cs" />
+    <Compile Include="API\Filesystem\GetFilespace.cs" />
+    <Compile Include="API\Filesystem\GetFilespaces.cs" />
+    <Compile Include="API\Filesystem\SetFilespace.cs" />
+    <Compile Include="API\Groups\DeleteGroup.cs" />
+    <Compile Include="API\Groups\GetGroup.cs" />
+    <Compile Include="API\Groups\GetGroups.cs" />
+    <Compile Include="API\Groups\Groups.cs" />
+    <Compile Include="API\Groups\SetGroup.cs" />
+    <Compile Include="API\Members\GetMember.cs" />
+    <Compile Include="API\Members\Members.cs" />
+    <Compile Include="API\Filesystem\MkDir.cs" />
+    <Compile Include="API\Filesystem\PutFile.cs" />
+    <Compile Include="API\Filesystem\UpdateDateTime.cs" />
+    <Compile Include="API\NoOp.cs" />
+    <Compile Include="API\Organizations\GetOrganization.cs" />
+    <Compile Include="API\Organizations\GetOrganizations.cs" />
+    <Compile Include="API\Organizations\Organizations.cs" />
+    <Compile Include="API\Trips\AppendTrip.cs" />
+    <Compile Include="API\Trips\SetTrip.cs" />
+    <Compile Include="API\Trips\Trips.cs" />
+    <Compile Include="AsyncMemoryStream.AsyncResultImpl.FakeWaitHandle.cs" />
+    <Compile Include="AsyncMemoryStream.AsyncResultReadImpl.cs" />
+    <Compile Include="AsyncMemoryStream.cs" />
+    <Compile Include="AsyncMemoryStream.AsyncResultImpl.cs" />
+    <Compile Include="AsyncStream.AsyncResultImpl.cs" />
+    <Compile Include="AsyncStream.cs" />
+    <Compile Include="AsyncResult.cs" />
+    <Compile Include="API\Filesystem\FilesystemApiCall.cs" />
+    <Compile Include="API\Filesystem\CancelCheckOut.cs" />
+    <Compile Include="API\Filesystem\Del.cs" />
+    <Compile Include="BinaryAttachment.cs" />
+    <Compile Include="EmptyStringToIntConverter.cs" />
+    <Compile Include="EnumJsonConverter.cs" />
+    <Compile Include="IApiCallResult.cs" />
+    <Compile Include="IRequest.cs" />
+    <Compile Include="IRequestDataProvider.cs" />
+    <Compile Include="IRequestDataProviderExtensions.cs" />
+    <Compile Include="IResponse.cs" />
+    <Compile Include="IUploader.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="ProgressEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RequestLogHelper.cs" />
+    <Compile Include="Session\Session.cs" />
+    <Compile Include="Session\Session.GetRequest.cs" />
+    <Compile Include="Session\Session.Logoff.cs" />
+    <Compile Include="Session\Session.Logon.cs" />
+    <Compile Include="Session\Session.LogonResult.cs" />
+    <Compile Include="Session\Session.PostRequest.FormDataContent.cs" />
+    <Compile Include="Session\Session.PostRequest.UrlEncodedContent.cs" />
+    <Compile Include="Session\Session.Request.cs" />
+    <Compile Include="Session\Session.Response.cs" />
+    <Compile Include="StreamNotifier.cs" />
+    <Compile Include="StreamReadNotifier.cs" />
+    <Compile Include="StreamWrapper.cs" />
+    <Compile Include="StreamWriteNotifier.cs" />
+    <Compile Include="SynchronizedDictionary.cs" />
+    <Compile Include="Types\AccessControlEntry.cs" />
+    <Compile Include="Types\AccessControlList.cs" />
+    <Compile Include="Types\ApplicationInformation.cs" />
+    <Compile Include="Types\ApplicationVersion.cs" />
+    <Compile Include="Types\BaseGroup.cs" />
+    <Compile Include="Types\BaseMemberData.cs" />
+    <Compile Include="Types\BaseMemberGroup.cs" />
+    <Compile Include="Types\DetailedAccessControlEntry.cs" />
+    <Compile Include="Types\DirResult.BaseEntry.cs" />
+    <Compile Include="Types\DirResult.cs" />
+    <Compile Include="Types\DirResult.FileEntry.cs" />
+    <Compile Include="Types\DirResult.FolderEntry.cs" />
+    <Compile Include="Types\FilespaceData.cs" />
+    <Compile Include="Types\GetFilespaceResult.cs" />
+    <Compile Include="Types\GetFilespacesResult.cs" />
+    <Compile Include="Types\GetGroupResult.cs" />
+    <Compile Include="Types\GetGroupsResult.cs" />
+    <Compile Include="Types\GetMemberResult.cs" />
+    <Compile Include="Session\Session.PostRequest.cs" />
+    <Compile Include="TccException.cs" />
+    <Compile Include="Types\ApiCallResult.cs" />
+    <Compile Include="Types\GetOrganizationResult.cs" />
+    <Compile Include="Types\GetOrganizationsResult.cs" />
+    <Compile Include="Types\GlobalTccSettings.cs" />
+    <Compile Include="Types\IDirBaseEntry.cs" />
+    <Compile Include="Types\IDirFile.cs" />
+    <Compile Include="Types\IDirFolder.cs" />
+    <Compile Include="Types\LoginAccoutData.cs" />
+    <Compile Include="Types\MemberData.cs" />
+    <Compile Include="Types\MemberGroup.cs" />
+    <Compile Include="Types\MemberLicenseType.cs" />
+    <Compile Include="Types\MemberType.cs" />
+    <Compile Include="Types\MkDirEntry.cs" />
+    <Compile Include="Types\MkDirResult.cs" />
+    <Compile Include="Types\NestedMemberGroup.cs" />
+    <Compile Include="Types\Organization.cs" />
+    <Compile Include="Types\OrganizationBase.cs" />
+    <Compile Include="Types\OrganizationLicenseType.cs" />
+    <Compile Include="Types\PutFileEntry.cs" />
+    <Compile Include="Types\PutFileItem.cs" />
+    <Compile Include="Types\PutFileResult.cs" />
+    <Compile Include="Types\SerializableDirEntry.cs" />
+    <Compile Include="Types\SerializableDirResult.cs" />
+    <Compile Include="Types\SetFilespaceResult.cs" />
+    <Compile Include="Types\SetGroupResult.cs" />
+    <Compile Include="Types\SetTripResult.cs" />
+    <Compile Include="Types\ShortMemberGroup.cs" />
+    <Compile Include="Types\TripEvent.cs" />
+    <Compile Include="Types\TripPoint.cs" />
+    <Compile Include="Types\TripTrack.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

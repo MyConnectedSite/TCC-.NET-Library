@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED589337-A6D3-4E45-BF77-50D4A60C386D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCC2.API</RootNamespace>
+    <AssemblyName>TCC2.API</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyLibraries\Newtonsoft\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Session\Session.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Session\Session.GetRequest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiParameter.cs" />
+    <Compile Include="API\ApiCallBase.cs" />
+    <Compile Include="API\ApiCallBaseGeneric.cs" />
+    <Compile Include="API\Filesystem\CheckIn.cs" />
+    <Compile Include="API\Filesystem\CheckOut.cs" />
+    <Compile Include="API\Filesystem\Copy.cs" />
+    <Compile Include="API\Filesystem\DeleteFilespace.cs" />
+    <Compile Include="API\Filesystem\Dir.cs" />
+    <Compile Include="API\Filesystem\FileOperationApiCall.cs" />
+    <Compile Include="API\Filesystem\Files.cs" />
+    <Compile Include="API\Filesystem\Filesystem.cs" />
+    <Compile Include="API\Filesystem\GetFile.cs" />
+    <Compile Include="API\Filesystem\GetFilespace.cs" />
+    <Compile Include="API\Filesystem\GetFilespaces.cs" />
+    <Compile Include="API\Filesystem\SetFilespace.cs" />
+    <Compile Include="API\Groups\DeleteGroup.cs" />
+    <Compile Include="API\Groups\GetGroup.cs" />
+    <Compile Include="API\Groups\GetGroups.cs" />
+    <Compile Include="API\Groups\Groups.cs" />
+    <Compile Include="API\Groups\SetGroup.cs" />
+    <Compile Include="API\Members\GetMember.cs" />
+    <Compile Include="API\Members\Members.cs" />
+    <Compile Include="API\Filesystem\MkDir.cs" />
+    <Compile Include="API\Filesystem\PutFile.cs" />
+    <Compile Include="API\Filesystem\UpdateDateTime.cs" />
+    <Compile Include="API\NoOp.cs" />
+    <Compile Include="API\Organizations\GetOrganization.cs" />
+    <Compile Include="API\Organizations\GetOrganizations.cs" />
+    <Compile Include="API\Organizations\Organizations.cs" />
+    <Compile Include="API\Trips\AppendTrip.cs" />
+    <Compile Include="API\Trips\SetTrip.cs" />
+    <Compile Include="EmptyStringToIntConverter.cs" />
+    <Compile Include="Types\SetTripResult.cs" />
+    <Compile Include="Types\TripEvent.cs" />
+    <Compile Include="Types\TripPoint.cs" />
+    <Compile Include="API\Trips\Trips.cs" />
+    <Compile Include="Types\TripTrack.cs" />
+    <Compile Include="AsyncResult.cs" />
+    <Compile Include="API\Filesystem\FilesystemApiCall.cs" />
+    <Compile Include="API\Filesystem\CancelCheckOut.cs" />
+    <Compile Include="API\Filesystem\Del.cs" />
+    <Compile Include="BinaryAttachment.cs" />
+    <Compile Include="EnumJsonConverter.cs" />
+    <Compile Include="IApiCallResult.cs" />
+    <Compile Include="IRequest.cs" />
+    <Compile Include="IRequestDataProvider.cs" />
+    <Compile Include="IRequestDataProviderExtensions.cs" />
+    <Compile Include="IResponse.cs" />
+    <Compile Include="IUploader.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="ProgressEventArgs.cs" />
+    <Compile Include="RequestLogHelper.cs" />
+    <Compile Include="Session\Session.Logoff.cs" />
+    <Compile Include="Session\Session.Logon.cs" />
+    <Compile Include="Session\Session.LogonResult.cs" />
+    <Compile Include="Session\Session.PostRequest.FormDataContent.cs" />
+    <Compile Include="Session\Session.PostRequest.UrlEncodedContent.cs" />
+    <Compile Include="Session\Session.Request.cs" />
+    <Compile Include="Session\Session.Response.cs" />
+    <Compile Include="StreamNotifier.cs" />
+    <Compile Include="StreamReadNotifier.cs" />
+    <Compile Include="StreamWriteNotifier.cs" />
+    <Compile Include="SynchronizedDictionary.cs" />
+    <Compile Include="Types\AccessControlEntry.cs" />
+    <Compile Include="Types\AccessControlList.cs" />
+    <Compile Include="Types\ApplicationInformation.cs" />
+    <Compile Include="Types\ApplicationVersion.cs" />
+    <Compile Include="Types\BaseMemberData.cs" />
+    <Compile Include="Types\BaseMemberGroup.cs" />
+    <Compile Include="Types\BaseGroup.cs" />
+    <Compile Include="Types\DetailedAccessControlEntry.cs" />
+    <Compile Include="Types\DirResult.BaseEntry.cs" />
+    <Compile Include="Types\DirResult.FileEntry.cs" />
+    <Compile Include="Types\DirResult.FolderEntry.cs" />
+    <Compile Include="Types\IDirFile.cs" />
+    <Compile Include="Types\IDirFolder.cs" />
+    <Compile Include="Types\NestedMemberGroup.cs" />
+    <Compile Include="Types\MemberType.cs" />
+    <Compile Include="Types\SerializableDirEntry.cs" />
+    <Compile Include="Types\DirResult.cs" />
+    <Compile Include="Types\FilespaceData.cs" />
+    <Compile Include="Types\GetFilespaceResult.cs" />
+    <Compile Include="Types\GetFilespacesResult.cs" />
+    <Compile Include="Types\GetGroupResult.cs" />
+    <Compile Include="Types\GetGroupsResult.cs" />
+    <Compile Include="Types\GetMemberResult.cs" />
+    <Compile Include="Session\Session.PostRequest.cs" />
+    <Compile Include="TccException.cs" />
+    <Compile Include="Types\ApiCallResult.cs" />
+    <Compile Include="Types\GetOrganizationResult.cs" />
+    <Compile Include="Types\GetOrganizationsResult.cs" />
+    <Compile Include="Types\GlobalTccSettings.cs" />
+    <Compile Include="Types\IDirBaseEntry.cs" />
+    <Compile Include="Types\LoginAccoutData.cs" />
+    <Compile Include="Types\MemberData.cs" />
+    <Compile Include="Types\MemberGroup.cs" />
+    <Compile Include="Types\MemberLicenseType.cs" />
+    <Compile Include="Types\MkDirEntry.cs" />
+    <Compile Include="Types\MkDirResult.cs" />
+    <Compile Include="Types\OrganizationLicenseType.cs" />
+    <Compile Include="Types\Organization.cs" />
+    <Compile Include="Types\OrganizationBase.cs" />
+    <Compile Include="Types\PutFileEntry.cs" />
+    <Compile Include="Types\PutFileItem.cs" />
+    <Compile Include="Types\PutFileResult.cs" />
+    <Compile Include="Types\SerializableDirResult.cs" />
+    <Compile Include="Types\SetFilespaceResult.cs" />
+    <Compile Include="Types\SetGroupResult.cs" />
+    <Compile Include="Types\ShortMemberGroup.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

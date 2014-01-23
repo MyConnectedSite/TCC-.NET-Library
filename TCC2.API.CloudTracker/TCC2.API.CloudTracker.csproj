@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{772F41A8-53BC-4A41-99DE-31C8CC89268D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TCC2.API.CloudTracker</RootNamespace>
+    <AssemblyName>TCC2.API.CloudTracker</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\ThirdPartyLibraries\Newtonsoft\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CloudTracker.cs" />
+    <Compile Include="CloudTrackerItemOperation.cs" />
+    <Compile Include="DeleteCloudTrackerEPCEvents.cs" />
+    <Compile Include="DeleteCloudTrackerItem.cs" />
+    <Compile Include="GetCloudTrackerEPCEvents.cs" />
+    <Compile Include="GetCloudTrackerItem.cs" />
+    <Compile Include="GetCloudTrackerItemFilters.cs" />
+    <Compile Include="GetCloudTrackerItems.cs" />
+    <Compile Include="GetCloudTrackerSettings.cs" />
+    <Compile Include="SetCloudTrackerEPCEvents.cs" />
+    <Compile Include="SetCloudTrackerItem.cs" />
+    <Compile Include="SetCloudTrackerSettings.cs" />
+    <Compile Include="Types\BaseCloudTrackerItem.cs" />
+    <Compile Include="Types\CloudTrackerAccessGroup.cs" />
+    <Compile Include="Types\CloudTrackerEPCEvent.cs" />
+    <Compile Include="Types\CloudTrackerItem.cs" />
+    <Compile Include="Types\CloudTrackerItemEvent.cs" />
+    <Compile Include="Types\CloudTrackerOrgAccessPermission.cs" />
+    <Compile Include="Types\GetCloudTrackerEPCEventsResult.cs" />
+    <Compile Include="Types\GetCloudTrackerItemFiltersResult.cs" />
+    <Compile Include="Types\GetCloudTrackerItemResult.cs" />
+    <Compile Include="Types\GetCloudTrackerItemsResult.cs" />
+    <Compile Include="Types\GetCloudTrackerSettingsResult.cs" />
+    <Compile Include="Types\PageableResponseParameters.cs" />
+    <Compile Include="Types\SetCloudTrackerEPCEventsResult.cs" />
+    <Compile Include="Types\SetCloudTrackerEPCEventsResultEntry.cs" />
+    <Compile Include="Types\SetCloudTrackerItemResult.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TCC2.API\TCC2.API.csproj">
+      <Project>{ED589337-A6D3-4E45-BF77-50D4A60C386D}</Project>
+      <Name>TCC2.API</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

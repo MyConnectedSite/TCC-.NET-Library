@@ -1,0 +1,347 @@
+[18.02.2010 17:55:35] LOGGING STARTED
+
+[18.02.2010 17:55:43] POST REQUEST
+URL: http://localhost//tcc/login
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
+Host: localhost
+Content-Length: 48
+Expect: 100-continue
+Connection: Keep-Alive
+
+username=tccadmin&orgname=tcc&password=*********
+
+[18.02.2010 17:55:43] RESPONSE
+{
+    "homeSite": "/site/tcc/tccsite",
+    "success": true,
+    "ticket": "TICKET_f6f3832641c999cb782934b78b2181119c051958"
+}
+
+[18.02.2010 17:55:43] GET REQUEST
+URL: http://localhost//tcc/getfilespaces?filespacetype=
+
+[18.02.2010 17:55:43] RESPONSE
+{"filespaces": [{
+    "authority": "OWNER",
+    "description": "",
+    "fileSpaceId": "ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85",
+    "filespacetype": "regular",
+    "ftppath": "/TCC/tcc/asd",
+    "orgDisplayName": "tcc",
+    "orgId": "u71689bec-eb91-47b5-a1a2-9fdf5531c9b5",
+    "orgShortname": "tcc",
+    "shortname": "asd",
+    "title": "sad"
+}]}
+
+[18.02.2010 17:55:43] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:43] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:43] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:43] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:43] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:43] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:44] GET REQUEST
+URL: http://localhost//tcc/getfilespaces?filespacetype=
+
+[18.02.2010 17:55:44] RESPONSE
+{"filespaces": [{
+    "authority": "OWNER",
+    "description": "",
+    "fileSpaceId": "ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85",
+    "filespacetype": "regular",
+    "ftppath": "/TCC/tcc/asd",
+    "orgDisplayName": "tcc",
+    "orgId": "u71689bec-eb91-47b5-a1a2-9fdf5531c9b5",
+    "orgShortname": "tcc",
+    "shortname": "asd",
+    "title": "sad"
+}]}
+
+[18.02.2010 17:55:44] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:44] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:44] GET REQUEST
+URL: http://localhost//tcc/dir?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/&recursive=false
+
+[18.02.2010 17:55:44] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:45] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:45] RESPONSE
+{
+    "acl": false,
+    "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "createMemberDisplayName": "tccadmin tccadmin",
+    "createTime": "2010-02-18 11:35:43.437",
+    "entries": [{
+        "aspect": [],
+        "checkoutmemberid": "",
+        "checkoutmemberdisplayname": "",
+        "createMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "createMemberDisplayName": "tccadmin tccadmin",
+        "createTime": "2010-02-18 11:35:56.843",
+        "entryId": "67561fd7-ff88-43c8-888b-46a8389f97f1",
+        "entryName": "TCC2.API.zip",
+        "iconCls": "file-zip",
+        "isFolder": false,
+        "leaf": true,
+        "mimetype": "application/zip",
+        "modifyMemberdisplayname": "tccadmin tccadmin",
+        "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+        "modifyTime": "2010-02-18 11:35:56.843",
+        "size": 169921,
+        "type": "file",
+        "versionable": true,
+        "workingcopy": false
+    }],
+    "entryId": "fd476885-13a1-4bd7-83a8-001a7e191f53",
+    "entryName": "/",
+    "filespacePermissionLevel": "OWNER",
+    "iconCls": "folder",
+    "isFolder": true,
+    "leaf": false,
+    "fileSpaceShortName": "asd",
+    "fileSpaceTitle": "sad",
+    "modifyMemberdisplayname": "tccadmin tccadmin",
+    "modifyMember": "u39db2a26-e60f-427e-8821-3075a3c9cc69",
+    "modifyTime": "2010-02-18 11:35:43.437",
+    "notifications": false,
+    "orgShortname": "tcc",
+    "orgTitle": "tcc",
+    "type": "folder"
+}
+
+[18.02.2010 17:55:52] GET REQUEST
+URL: http://localhost//tcc/getfile?filespaceid=ub1d4bc78-fe67-4f0a-8d0f-e5457fa8ab85&path=/TCC2.API.zip
+
+[18.02.2010 17:55:52] RESPONSE
+
+
+[18.02.2010 17:55:55] GET REQUEST
+URL: http://localhost//tcc/logoff?ticket=TICKET_f6f3832641c999cb782934b78b2181119c051958
+
+[18.02.2010 17:55:55] RESPONSE
+{}

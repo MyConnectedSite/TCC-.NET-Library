@@ -1,0 +1,13 @@
+D:\var\Windows\TCC2.API\UsageSample\bin\x86\Debug\UsageSample.exe
+D:\var\Windows\TCC2.API\UsageSample\bin\x86\Debug\UsageSample.pdb
+D:\var\Windows\TCC2.API\UsageSample\bin\x86\Debug\TCC2.API.dll
+D:\var\Windows\TCC2.API\UsageSample\bin\x86\Debug\Newtonsoft.Json.dll
+D:\var\Windows\TCC2.API\UsageSample\bin\x86\Debug\TCC2.API.pdb
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.LoginForm.resources
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.MainForm.resources
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.ProgressFormBase.resources
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.Properties.Resources.resources
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.csproj.GenerateResource.Cache
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.exe
+D:\var\Windows\TCC2.API\UsageSample\obj\x86\Debug\UsageSample.pdb

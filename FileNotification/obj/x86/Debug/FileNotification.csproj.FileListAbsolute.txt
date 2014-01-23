@@ -1,0 +1,18 @@
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\FileNotification.exe
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\FileNotification.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\TCC2.API.dll
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\TCC2.API.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\obj\x86\Debug\FileNotification.exe
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source\FileNotification\obj\x86\Debug\FileNotification.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\obj\x86\Debug\FileNotification.exe
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\obj\x86\Debug\FileNotification.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\FileNotification.exe
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\FileNotification.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\Newtonsoft.Json.dll
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\TCC2.API.dll
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\TCC2.API.pdb
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\bin\Debug\Newtonsoft.Json.xml
+C:\Documents and Settings\John\Desktop\TCC2.API_2012-10-16-source with notifications and ren\FileNotification\obj\x86\Debug\ResolveAssemblyReference.cache
